@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discount/割引</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <h3 class="title">
+            Choose your Discount
+        </h3>
+        <p class="subtitle">
+            Slide to select your preferred discount level
+        </p>
+        <div class="card">
+            <div class=" card-child range-container">
+                <input type="range" name="" id="rangeInput" class="range-input"
+                min="0" max="100" value="0" step="1">
+            </div>
+            <div class="card-child custom-message">
+                <p class="title">
+                    Community Builder
+                </p>
+                <p>I want to pay the maximum price and contribute to the 
+                    community, empowering others to learn and grow.
+                </p>
+            </div>
+            <div class="card-child price-container">
+                <div class="price-container-child-1 flex">
+                    <div class="original">
+                        <p>
+                            Original Price
+                        </p>
+                        <p id="originalPrice">
+                            BDT,3000
+                        </p>
+                    </div>
+                    <div class="discount">
+                        <p>Discount Applied</p>
+                        <p id="discountPercentage">
+                            0%
+                        </p>
+                    </div>
+                </div>
+                <div class="price-container-child-2 flex">
+                    <div>
+                        <p>You save</p>
+                        <p id="discountAmount">
+                            BDT 0
+                        </p>
+                    </div>
+                    <div>
+                        <p>Final Price</p>
+                        <p id="finalPrice">
+                            BDT 3000
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="script.js">
+</script>
+</body>
+
+</html>

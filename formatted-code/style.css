@@ -1,0 +1,113 @@
+/* General Reset and Imports */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:wght@100;400&display=swap');
+
+/* Global Styles */
+
+body,html {
+    width: 100vw;
+    min-height: 100vh;
+    background-color: #101012;
+    color: #fafafa;
+    font-family: "Roboto", sans-serif;
+    display: grid;
+    place-content: center;
+}
+
+/* feature-container */
+.discount-feature{
+    background-color: #090909;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    min-width: 500px;
+    width: 30vw;
+    padding: 1rem 2rem;
+}
+.feature-header .feature-title {
+    color:#17c65c;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: .25rem;
+}
+
+.feature-header{
+    margin-bottom: 2rem;
+}
+/* feature-card */
+.feature-card{
+    width: 100%;
+    padding: 1rem 1.5rem;
+    background-color: #091715;
+    border-radius: 5px;
+}
+
+/* range-container */
+.range-container{
+    margin-bottom: 1.5rem;
+}
+.range-input {
+    width: 100%;
+    appearance: none;
+    height: 2px;
+    background-color: #fafafa;
+}
+.range-input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 10px;
+    height: 10px;
+    background-color: aquamarine;
+    border-radius: 5px 5px 0px 5px;
+    transform: translateY(-8px) rotate(45deg);
+}
+
+/* Custom Message */
+.custom-message {
+    text-align: center;
+    background-color: #142220;
+    border-radius: 5px;
+    padding: 1rem 2rem;
+}
+
+.custom-message .message-title {
+    color: aquamarine;
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
+}
+
+/* Price Details */
+.price-container {
+    margin-top: 1.25rem;
+    background-color: rgba(86, 119, 108, 0.25);
+    padding: 0.5rem 0.75rem;
+    border-radius: 5px;
+}
+
+.price-info,
+.savings-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    padding: 1rem 2rem;
+}
+.savings-info{
+    background-color: #142220;
+    
+    border-radius: 5px;
+}
+.price-info p,
+.savings-info p {
+    margin: 0;
+}
+
+#finalPrice,
+#discountAmount,
+#discountPercentage {
+    color: aquamarine;
+}

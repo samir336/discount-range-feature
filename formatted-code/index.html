@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discount/Waribiki</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Discount feature section -->
+    <section class="discount-feature">
+        <header class="feature-header">
+            <h2 class="feature-title">
+                Choose your Discount
+            </h2>
+            <p class="feature-subtitle">
+                Slide to Select your preferred Discount!
+            </p>
+        </header>
+        <div class="feature-card">
+            <!-- Range Input -->
+            <div class="range-container">
+                <input 
+                type="range" 
+                id="rangeInput"
+                class="range-input"
+                min="0"
+                max="100"
+                value="0"
+                step="1"
+                aria-label="Discount Slider">
+            </div>
+            <!-- Custom Message -->
+            <div class="custom-message">
+                <h3 class="message-title">
+                    Community Builder
+                </h3>
+                <p class="message-text">
+                    I want to pay the maximum price and contribute to 
+                    the community, empowering others to learn and grow.
+                </p>
+            </div>
+            <!-- Price Details -->
+            <div class="price-container">
+                <!-- Original price & Discount -->
+                <div class="price-info">
+                    <div class="original-price">
+                        <p>Original Price</p>
+                        <p id="originalPrice">BDT 3000</p>
+                    </div>
+                    <div class="discount-percentage">
+                        <p>Discount Applied</p>
+                        <p id="discountPercentage">0 %</p>
+                    </div>
+                </div>
+                <!-- Final price & Saving -->
+                <div class="savings-info">
+                    <div class="savings">
+                        <p>You save</p>
+                        <p id="discountAmount">BDT 0</p>
+                    </div>
+                    <div class="final-price">
+                        <p>Final Price</p>
+                        <p id="finalPrice">BDT 3000</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
